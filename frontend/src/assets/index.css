@@ -1,8 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-body{
-  background-color: #0b001d;
+body {
+  background-color: #fff;
   /*DO A GRADIANT BACKGROUND, WITH SOME SHAPES */
+
+  /* FONT */
+  font-size: 1rem;
 }
