@@ -13,6 +13,8 @@ const App = () => {
             path={Paths.Application.path}
             element={Paths.Application.element}
           />
+          <Route path={Paths.Login.path} element={Paths.Login.element} />
+          <Route path={Paths.Register.path} element={Paths.Register.element} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,7 +1,8 @@
 import Home from "../elements/Home";
 import Blog from "../elements/Blog";
 import WebApp from "../elements/WebApp";
-import Layout from "../elements/Layout";
+import Login from "../elements/Login";
+import Register from "../elements/Register";
 
 const paths = {
   Home: {
@@ -19,6 +20,16 @@ const paths = {
     path: "/web-app",
     element: <WebApp />,
   },
+  Login: {
+    title: "Login",
+    path: "/login",
+    element: <Login />,
+  },
+  Register: {
+    title: "Register",
+    path: "/login",
+    element: <Register />,
+  }
 };
 
 export default paths;
