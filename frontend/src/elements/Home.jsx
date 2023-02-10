@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <div id="heroSect">
         <div className="bg-transparent w-11/12 md:w-9/12 h-screen flex flex-col justify-center gap-4 items-center mx-auto">
-          <div className=" bg-transparent w-3/4 text-center font-bold text-3xl md:text-7xl">
+          <div className=" w-3/4 text-center  font-bold text-4xl md:text-7xl">
             Improve your Productivity with
             <strong className="text-purple-900"> Vity</strong>
           </div>
