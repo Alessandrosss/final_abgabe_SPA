@@ -27,7 +27,7 @@ const paths = {
   },
   Register: {
     title: "Register",
-    path: "/login",
+    path: "/register",
     element: <Register />,
   }
 };

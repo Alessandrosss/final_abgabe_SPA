@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { ButtonCompact } from "./buttons";
+import { ButtonCompact, ButtonOutlined } from "./buttons";
 
 const Home = () => {
   return (
@@ -10,7 +10,10 @@ const Home = () => {
             Improve your Productivity with
             <strong className="text-purple-900"> Vity</strong>
           </div>
-          <ButtonCompact path="/login" value="Login" />
+          <div className="flex flex-row gap-x-4 mt-4">
+          <ButtonOutlined path="/login" value="Login" />
+          <ButtonCompact path="/register" value="Sign up" />
+          </div>
         </div>
       </div>
     </>
