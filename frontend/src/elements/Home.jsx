@@ -1,7 +1,9 @@
+import { useQuery } from "react-query";
 import { useNavigate } from "react-router-dom";
 import { ButtonCompact, ButtonOutlined } from "./buttons";
 
 const Home = () => {
+
   return (
     <>
       <div id="heroSect">
@@ -11,8 +13,8 @@ const Home = () => {
             <strong className="text-purple-900"> Vity</strong>
           </div>
           <div className="flex flex-row gap-x-4 mt-4">
-          <ButtonOutlined path="/login" value="Login" />
-          <ButtonCompact path="/register" value="Sign up" />
+            <ButtonOutlined path="/login" value="Login" />
+            <ButtonCompact path="/register" value="Sign up" />
           </div>
         </div>
       </div>
