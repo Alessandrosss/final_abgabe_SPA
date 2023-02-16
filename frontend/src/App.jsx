@@ -1,8 +1,9 @@
 import React from "react";
 import { QueryClient, QueryClientProvider, useQueryClient } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./elements/Layout";
-import Paths from "./utils/paths";
+import paths from "./utils/paths";
 
 const queryClient = new QueryClient();
 
@@ -12,20 +13,21 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route element={<Layout />}>
-            <Route index path={Paths.Home.path} element={Paths.Home.element} />
-            <Route path={Paths.Blog.path} element={Paths.Blog.element} />
+            <Route index path={paths.Home.path} element={paths.Home.element} />
+            <Route path={paths.Blog.path} element={paths.Blog.element} />
             <Route
-              path={Paths.Application.path}
-              element={Paths.Application.element}
+              path={paths.Application.path}
+              element={paths.Application.element}
             />
-            <Route path={Paths.Login.path} element={Paths.Login.element} />
+            <Route path={paths.Login.path} element={paths.Login.element} />
             <Route
-              path={Paths.Register.path}
-              element={Paths.Register.element}
+              path={paths.Register.path}
+              element={paths.Register.element}
             />
           </Route>
         </Routes>
       </BrowserRouter>
+      <ReactQueryDevtools />
     </QueryClientProvider>
   );
 };

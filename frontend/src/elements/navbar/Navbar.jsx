@@ -4,6 +4,7 @@ import paths from "../../utils/paths";
 import { ButtonCompact, ButtonOutlined } from "../buttons";
 import Logo from "./Logo";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { useQuery } from "react-query";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -11,6 +12,8 @@ const Navbar = () => {
   const handleNav = () => {
     setIsOpen(!isOpen);
   };
+
+  
 
   return (
     <div className=" px-8 flex justify-between items-center h-24 w-full lg:w-9/12 md:mx-auto">
@@ -20,8 +23,7 @@ const Navbar = () => {
       <ul className="hidden lg:flex flex-row gap-6 uppercase font-semibold">
         <li className="p-4">Home</li>
         <li className="p-4">About</li>
-        <li className="p-4">Web App</li>
-        <li className="p-4">Login</li>
+        <li className="p-4">Application</li>
         <ButtonCompact value="try for free" path="/login" />
       </ul>
 

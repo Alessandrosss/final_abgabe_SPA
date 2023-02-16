@@ -1,14 +1,25 @@
-import React from 'react'
+import React from "react";
+import { QueryCache, useQuery } from "react-query";
+import { getAllUsers } from "../api/userApi";
 
 const WebApp = () => {
-
-  //if user is not logged in, redirect to Login/Register
-
-  //if user logged in, show his data
+  const { data, status, error } = useQuery("getAllUsers", getAllUsers);
 
   return (
-    <div>WebApp</div>
-  )
-}
+    <>
+      <h1>WebApp</h1>
 
-export default WebApp
+      {status === "loading" ? <div>Loading...</div> : null}
+      {status === "error" ? console.log("error: " + error) : null}
+      {status === "success" ? (
+        <ul>
+          {data.data.map((user) => (
+            <li>{user.email}</li>
+          ))}
+        </ul>
+      ) : null}
+    </>
+  );
+};
+
+export default WebApp;
