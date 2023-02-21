@@ -9,7 +9,7 @@ const ButtonGruppe = (props) => {
             xs: 'column',
             md: 'row'
         },
-        gap: '1rem'
+        gap: '.5rem'
     }}>{props.children}</Box>
   )
 }

@@ -32,12 +32,6 @@ function App() {
                 path='/blog'
               />
               <Route
-                element={
-                  <WebApplication />
-                }
-                path='/webapplication'
-              />
-              <Route
                 element={<Login />}
                 path='/login'
               />
@@ -46,6 +40,12 @@ function App() {
                 path='/register'
               />
             </Route>
+            <Route
+              element={
+                <WebApplication />
+              }
+              path='/webapplication'
+            />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>

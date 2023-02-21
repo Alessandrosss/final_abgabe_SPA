@@ -11,7 +11,7 @@ const RegisterButton = (props) => {
       variant={variant}
     >
       <Link to='/register'>
-        Register
+        Sign Up
       </Link>
     </Button>
   )
