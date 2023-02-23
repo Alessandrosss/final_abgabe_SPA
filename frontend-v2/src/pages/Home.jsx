@@ -8,7 +8,7 @@ import {
 import TextSnippetIcon from '@mui/icons-material/TextSnippet'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
 import ListAltIcon from '@mui/icons-material/ListAlt'
-import CardIcon from '../elements/CardIcon'
+import CardIcon from '../elements/cards/CardIcon'
 import React from 'react'
 import LoginButton from '../elements/buttons/LoginButton'
 import RegisterButton from '../elements/buttons/RegisterButton'

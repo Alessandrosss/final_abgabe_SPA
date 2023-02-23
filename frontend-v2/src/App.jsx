@@ -11,7 +11,7 @@ import {
 } from 'react-router-dom'
 import './assets/App.css'
 import { ThemeProvider } from '@mui/material/styles'
-import theme from './palette'
+import theme from './theme'
 import { CssBaseline } from '@mui/material'
 
 function App() {

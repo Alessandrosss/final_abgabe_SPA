@@ -68,9 +68,15 @@
   border-radius: 8px;
 }
 
+.dashboard {
+  margin-left: 240px;
+}
+
+.calender {
+  max-width: 270px;
+}
+
 footer {
   padding: 3rem;
   margin-top: 4rem;
 }
-
-
